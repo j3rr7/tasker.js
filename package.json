@@ -1,0 +1,30 @@
+{
+  "name": "tasker",
+  "version": "1.0.0",
+  "description": "A lightweight and easy-to-use JavaScript task scheduler, Useful for basic scheduling needs, but please proceed with caution for more complex or performance-critical scenarios.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/j3rr7/tasker.js.git"
+  },
+  "keywords": [
+    "task",
+    "task",
+    "management",
+    "timer",
+    "tasks"
+  ],
+  "author": "Jeremy Fanuel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/j3rr7/tasker.js/issues"
+  },
+  "homepage": "https://github.com/j3rr7/tasker.js#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
