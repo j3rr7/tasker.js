@@ -12,6 +12,35 @@ This task manager is primarily built using `setTimeout`. While suitable for many
 - Simple API: Create, cancel, reschedule, and list tasks with minimal code.
 - Lightweight: Minimal dependencies, perfect for small or large projects. 
 
+## How to Use
+
+### Installation
+```bash
+npm install git+https://github.com/j3rr7/tasker.js.git
+```
+
+### Basic Usage
+```js
+// CommonJS
+const { TaskManager } = require('tasker');
+
+const taskManager = new TaskManager();
+
+const taskId = taskManager.createTask(new Date(), () => {
+  console.log('Task executed!');
+});
+```
+```js
+// ESM
+import { TaskManager } from 'tasker';
+
+const taskManager = new TaskManager();
+
+taskManager.createTask(new Date(Date.now() + 1000), () => {
+  console.log('Task executed!');
+});
+```
+
 ## Limitations
 
 If your task manager primarily handles short-running tasks (like simple function calls), setTimeout is likely still a reasonable choice.

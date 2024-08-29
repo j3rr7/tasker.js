@@ -1,3 +1,7 @@
+'use strict';
+
+Object.defineProperty(exports, '__esModule', { value: true });
+
 /**
  * @module TaskManager
  */
@@ -11,7 +15,7 @@
  * @property {number} timeoutId - The ID of the timeout that is used to execute the task.
  */
 
-export class Task {
+class Task {
   constructor(id, targetTime, callback) {
     this.id = id;
     this.targetTime = targetTime;
@@ -32,7 +36,7 @@ export class Task {
 /**
  * Manages the creation, scheduling, and execution of tasks.
  */
-export class TaskManager {
+class TaskManager {
   /**
    * Creates a new TaskManager instance.
    */
@@ -128,4 +132,6 @@ export class TaskManager {
   }
 }
 
-export default TaskManager;
+exports.Task = Task;
+exports.TaskManager = TaskManager;
+exports.default = TaskManager;

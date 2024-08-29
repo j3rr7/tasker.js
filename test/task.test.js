@@ -1,5 +1,5 @@
 import { jest } from '@jest/globals';
-import { Task, TaskManager } from '../src/task';
+import { Task, TaskManager } from '../src/task.js';
 
 jest.useFakeTimers();
 
